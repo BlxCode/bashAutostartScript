@@ -1,2 +1,10 @@
 #!/bin/bash
-echo "Enter your passwrod if u forgot ur password then ur stupid and cooked"
+  trap "" INT
+    read -s -p "Enter ur terminal password: " psswd
+        if [ $psswd = "1234" ]; then
+      echo "Password Accepted"
+    else
+      echo "Password Declined"
+      exit
+    fi
+
